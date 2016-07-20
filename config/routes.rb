@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  namespace :account do
+    resources :orders
+  end
+
   resources :items, controller: "cart_items"
 
   resources :orders do
