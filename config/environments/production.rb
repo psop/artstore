@@ -89,8 +89,18 @@ Rails.application.configure do
     address:        "smtp.mailgun.org",
     user_name:      ENV["mailgun_user"],
     password:       ENV["mailgun_secret"],
-    domain:         "sandbox3d8b27b275f642c980e1ab79c9733a08.mailgun.org", # 你的 mailgun domain name
+    domain:         "sandbox3d8b27b275f642c980e1ab79c9733a08.mailgun.org", 
 
     authentication: :plain,
   }
+
+  config.storage :fog                       
+  config.fog_credentials = {
+    provider:              'AWS',                        
+    aws_access_key_id:     ENV["carrier_wave_aws_access_key_id"],          
+    aws_secret_access_key: ENV["carrier_wave_aws_secret_access_key"],        
+    region:                'ap-northeast-2'  
+
+    }
+    config.fog_directory  = 'myprivatechefstore'
 end
