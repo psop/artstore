@@ -94,13 +94,19 @@ Rails.application.configure do
     authentication: :plain,
   }
 
-  config.storage :fog                       
-  config.fog_credentials = {
-    provider:              'AWS',                        
-    aws_access_key_id:     ENV["carrier_wave_aws_access_key_id"],          
-    aws_secret_access_key: ENV["carrier_wave_aws_secret_access_key"],        
-    region:                'ap-northeast-2'  
+  CarrierWave.configure do |config|
+    if Rails.env.production?
+      config.storage :fog                       
+      config.fog_credentials = {
+        provider:              'AWS',                        
+        aws_access_key_id:     ENV["carrier_wave_aws_access_key_id"],          
+        aws_secret_access_key: ENV["carrier_wave_aws_secret_access_key"],        
+        region:                'ap-northeast-2'  
 
-    }
-    config.fog_directory  = 'myprivatechefstore'
+      }
+      config.fog_directory  = 'myprivatechefstore'
+    else
+      config.storage :file
+    end
+  end
 end
