@@ -81,5 +81,5 @@ Rails.application.configure do
     Pay2go.integration_mode = :development
   end
 
-  config.action_mailer.default_url_options = { host: 'fast-headland-68911.herokuapp.com' } # 你的 heroku app 網址
+  config.action_mailer.default_url_options = { host: 'https://fast-headland-68911.herokuapp.com' } # 你的 heroku app 網址
 end
