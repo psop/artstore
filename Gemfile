@@ -48,6 +48,10 @@ gem "font-awesome-rails"
 
 gem "aasm"
 
+gem "roadie", "2.4.3"
+
+gem "letter_opener", group: :development
+
 group :production do
   gem "pg"
   gem "rails_12factor"
