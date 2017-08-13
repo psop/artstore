@@ -7,13 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if !current_user %>
-    <%= link_to "Sign In", new_user_session_path %>
-  <% else %>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" } %>
-  <% end %>
-
-<%= yield %>
+  <div class="container">
+  	<%= render "common/navbar" %>
+  	<%= yield %>
+  </div>
 
 </body>
 </html>
