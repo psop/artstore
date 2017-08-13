@@ -14,10 +14,24 @@ class Admin::ProductsController < ApplicationController
   	@product = Product.new(product_params)
 
   	if @product.save
-  	  redirect_to admin_product_path
+  	  redirect_to admin_products_path
   	else
   	  render 'new'
   	end
+  end
+
+  def edit
+    @product = Product.find(params[:id])
+  end
+
+  def update
+    @product = Product.find(params[:id])
+
+    if @product.update(product_params)
+      redirect_to admin_products_path
+    else
+      render 'edit'
+    end
   end
 
   private
