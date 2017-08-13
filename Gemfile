@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 4.3'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'simple_form', '~> 3.5'
+gem 'carrierwave', '~> 1.1'
+gem 'mini_magick', '~> 4.8'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
