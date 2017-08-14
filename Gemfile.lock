@@ -1,6 +1,8 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    aasm (4.12.2)
+      concurrent-ruby (~> 1.0)
     actionmailer (4.2.2)
       actionpack (= 4.2.2)
       actionview (= 4.2.2)
@@ -70,6 +72,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
+    concurrent-ruby (1.0.5)
     debug_inspector (0.0.2)
     devise (4.3.0)
       bcrypt (~> 3.0)
@@ -199,6 +202,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm (~> 4.12, >= 4.12.2)
   awesome_rails_console
   bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
