@@ -5,4 +5,10 @@ class CartsController < ApplicationController
   	@order = current_user.orders.build
   	@infor = @order.build_info
   end
+
+  def clean
+  	current_cart.clean!
+  	flash[:warning] = "The Cart has been reset."
+  	redirect_to carts_path
+  end
 end
