@@ -7,10 +7,10 @@ CarrierWave.configure do |config|
       region:                'us-east-1', # 你的 S3 bucket 的 Region 位置   
 
     }
-    config.storage :fog      
+    config.storage = :fog     
     config.fog_directory  = 'travelfuntaiwan' # 你設定的 bucket name 
 
   else
-    config.storage :file
+    config.storage = :file
   end
 end
