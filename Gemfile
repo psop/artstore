@@ -33,7 +33,7 @@ gem 'aasm', '~> 4.12', '>= 4.12.2'
 gem "roadie", "2.4.3", group: :development
 gem "letter_opener", group: :development
 gem "figaro"
-gem "fog-aws"
+gem "fog"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
