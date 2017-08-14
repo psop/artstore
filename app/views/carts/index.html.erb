@@ -8,6 +8,7 @@
   	  	<tr>
   	  	  <th colspan="2">Cart Items</th>
   	  	  <th>Price</th>
+          <th>Delete</th>
   	  	</tr>
   	  </thead>
   	  <tbody>
@@ -28,6 +29,11 @@
   	  	  	<td>
   	  	  		<%= product.price %>
   	  	  	</td>
+            <td>
+              <%= link_to item_path(product), method: :delete do %>
+                <i class="fa fa-trash"></i>
+              <% end %>
+            </td>
   	  	  </tr>
   	  	<% end %>
   	  </tbody>
