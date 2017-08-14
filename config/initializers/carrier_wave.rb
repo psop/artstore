@@ -13,4 +13,5 @@ CarrierWave.configure do |config|
   else
     config.storage = :file
   end
+require 'carrierwave/storage/fog'
 end
