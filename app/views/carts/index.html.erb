@@ -5,7 +5,7 @@
   	<table class="table table-bordered">
   	  <thead>
   	  	<tr>
-  	  	  <th colspan="2">Items</th>
+  	  	  <th colspan="2">Cart Items</th>
   	  	  <th>Price</th>
   	  	</tr>
   	  </thead>
@@ -42,7 +42,7 @@
   	<hr>
 
   	<div class="checkout clearfix">
-  	  <%= link_to "Ready to pay", "#", method: :post, class: "btn btn-lg btn-danger pull-right" %>
+  	  <%= link_to "Ready to pay", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right" %>
   	</div>
   </div>
 </div>
