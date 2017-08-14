@@ -30,7 +30,7 @@ gem 'carrierwave', '~> 1.1'
 gem 'mini_magick', '~> 4.8'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 gem 'aasm', '~> 4.12', '>= 4.12.2'
-gem "roadie", "2.4.3"
+gem "roadie", "2.4.3", group: :development
 gem "letter_opener", group: :development
 gem "figaro"
 
