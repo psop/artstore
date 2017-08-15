@@ -89,4 +89,6 @@ Rails.application.configure do
   }
 
   config.action_mailer.default_url_options = { host: 'https://travelfunatw.herokuapp.com/' }
+
+  config.active_job.queue_adapter = :delayed_job
 end

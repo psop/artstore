@@ -34,6 +34,7 @@ gem "roadie", "2.4.3", group: :development
 gem "letter_opener", group: :development
 gem "figaro"
 gem "fog"
+gem 'delayed_job_active_record'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
