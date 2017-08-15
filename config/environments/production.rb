@@ -88,5 +88,5 @@ Rails.application.configure do
     authentication: :plain,
   }
 
-  config.action_mailer.default_url_options = { host: 'https://arcane-mountain-32829.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'https://travelfunatw.herokuapp.com/' }
 end
