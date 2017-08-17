@@ -36,6 +36,7 @@ gem "figaro"
 gem "fog"
 gem 'delayed_job_active_record'
 gem 'omniauth-facebook', '~> 4.0'
+gem 'masonry-rails', '~> 0.2.4'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
