@@ -28,3 +28,12 @@
     </div>
   </div>  
 </div>
+
+<div class="product_comment">
+  <p class="comment"><%= pluralize(@product.comments.count, "Comment") %></p>
+    <% @comments.each do |comment| %>
+      <p><%= comment.user.name %></p>
+      <p><%= comment.context %></p>
+    <% end %>
+  <%= render "comments/form" %>
+</div>

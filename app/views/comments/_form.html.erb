@@ -1,0 +1,8 @@
+<%= simple_form_for [@product, @product.comments.build] do |f| %>
+  <div class="form-group">
+    <%= f.input :context, input_html: { class: "form-control" } %>	
+  </div>
+  <div class="form-actions">
+    <%= f.submit "Submit", disable_with: "Submitting...", class: "btn btn-primary" %>
+  </div>
+<% end %>
